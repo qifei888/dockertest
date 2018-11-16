@@ -1,0 +1,4 @@
+FROM httpd:2.4
+ADD website /var/www/html/
+EXPOSE 80
+CMD ["/usr/sbin/httpd"]
