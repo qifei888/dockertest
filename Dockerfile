@@ -1,4 +1,4 @@
-FROM nginx:1.10.3
+FROM registry.ztosys.com/nebula-base/nginx:1.15
 ADD website /usr/share/nginx/html/
 RUN rm /etc/nginx/conf.d/default.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
